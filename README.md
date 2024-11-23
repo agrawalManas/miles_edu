@@ -58,6 +58,7 @@ This app follows Factory design patterns for optimal performance and integritry.
 ## NOTE
 - No specific font family is being in the application
 - Talk_to_us_bottomsheet does not contain any animation/gif as the required assets were not present in figma
+- The gif present for talk_to_us bottomshet in different from the one present in screen_recording as exproted from figma
 - Used the default circular_indicator for depictig the loading state on pull down to refresh in home screen, as no asset was present on figma
 - The image_path present in the given json files are not working as the token is expired, so all the placeholder images are exported from the figma and used
 - The bottom_navigation bar is slightly different from the given screen recording due to timeline constraints for assessment submission
