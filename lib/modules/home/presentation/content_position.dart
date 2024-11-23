@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miles_edu_assessment/constants/enums.dart';
-import 'package:miles_edu_assessment/modules/home/domain/models/home_screen_model.dart';
+import 'package:miles_edu_assessment/modules/home/models/home_screen_model.dart';
 import 'package:miles_edu_assessment/modules/home/presentation/content_builder_service.dart';
 import 'package:miles_edu_assessment/modules/home/presentation/widgets/custom_heading.dart';
 

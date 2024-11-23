@@ -3,11 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:miles_edu_assessment/common_widgets/custom_app_bar_with_image.dart';
 import 'package:miles_edu_assessment/constants/home_screen_response.dart';
 import 'package:miles_edu_assessment/modules/dashboard/widgets/painters.dart';
-import 'package:miles_edu_assessment/modules/home/domain/models/home_screen_model.dart';
+import 'package:miles_edu_assessment/modules/home/models/home_screen_model.dart';
 import 'package:miles_edu_assessment/modules/home/presentation/content_position.dart';
 import 'package:miles_edu_assessment/constants/app_colors.dart';
 import 'package:miles_edu_assessment/constants/testimonial_response.dart';
-import 'package:miles_edu_assessment/modules/home/domain/models/testimonials_model.dart';
+import 'package:miles_edu_assessment/modules/home/models/testimonials_model.dart';
 import 'package:miles_edu_assessment/modules/home/presentation/widgets/footer_section.dart';
 import 'package:miles_edu_assessment/modules/home/presentation/widgets/header_section.dart';
 import 'package:miles_edu_assessment/modules/home/presentation/widgets/testimonials/testimonials_section.dart';
@@ -64,15 +64,19 @@ class _HomeScreenState extends State<HomeScreen> {
               );
             },
             child: ValueListenableBuilder(
-                valueListenable: _isLoading,
-                builder: (context, value, child) {
-                  return value
-                      ? Center(
-                          child: CircularProgressIndicator(
-                            color: AppColors.secondary03,
-                          ),
-                        )
-                      : SingleChildScrollView(
+              valueListenable: _isLoading,
+              builder: (context, value, child) {
+                return value
+                    ? Center(
+                        child: CircularProgressIndicator(
+                          color: AppColors.secondary03,
+                        ),
+                      )
+                    : ScrollConfiguration(
+                        behavior: const ScrollBehavior().copyWith(
+                          overscroll: false,
+                        ),
+                        child: SingleChildScrollView(
                           child: Padding(
                             padding: EdgeInsets.symmetric(horizontal: 16.w),
                             child: Column(
@@ -100,12 +104,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                   alignment: Alignment.center,
                                   child: FooterSection(),
                                 ),
-                                24.verticalSpace,
+                                96.verticalSpace,
                               ],
                             ),
                           ),
-                        );
-                }),
+                        ),
+                      );
+              },
+            ),
           ),
         ),
       ),

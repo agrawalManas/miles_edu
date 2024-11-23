@@ -4,7 +4,7 @@ import 'package:miles_edu_assessment/common_widgets/custom_button.dart';
 import 'package:miles_edu_assessment/constants/app_assets.dart';
 import 'package:miles_edu_assessment/constants/app_colors.dart';
 import 'package:miles_edu_assessment/constants/app_text_styles.dart';
-import 'package:miles_edu_assessment/modules/home/domain/models/testimonials_model.dart';
+import 'package:miles_edu_assessment/modules/home/models/testimonials_model.dart';
 import 'package:miles_edu_assessment/utils/image_loader.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 

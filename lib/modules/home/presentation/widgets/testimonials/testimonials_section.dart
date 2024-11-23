@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:miles_edu_assessment/constants/app_assets.dart';
 import 'package:miles_edu_assessment/constants/app_colors.dart';
 import 'package:miles_edu_assessment/constants/app_text_styles.dart';
-import 'package:miles_edu_assessment/modules/home/domain/models/testimonials_model.dart';
+import 'package:miles_edu_assessment/modules/home/models/testimonials_model.dart';
 import 'package:miles_edu_assessment/modules/testimonials/presentation/testimonial_screen.dart';
 import 'package:miles_edu_assessment/utils/image_loader.dart';
 

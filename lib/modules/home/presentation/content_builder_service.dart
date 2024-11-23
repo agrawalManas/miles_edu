@@ -5,7 +5,7 @@ import 'package:miles_edu_assessment/constants/app_assets.dart';
 import 'package:miles_edu_assessment/constants/app_colors.dart';
 import 'package:miles_edu_assessment/constants/app_text_styles.dart';
 import 'package:miles_edu_assessment/constants/enums.dart';
-import 'package:miles_edu_assessment/modules/home/domain/models/home_screen_model.dart';
+import 'package:miles_edu_assessment/modules/home/models/home_screen_model.dart';
 import 'package:miles_edu_assessment/utils/image_loader.dart';
 import 'package:miles_edu_assessment/modules/youtube_video/presentation/youtube_video_screen.dart';
 
